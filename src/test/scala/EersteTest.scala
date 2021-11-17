@@ -3,7 +3,7 @@ import io.gatling.http.Predef._
 
 class EersteTest extends Simulation {
 
-  val httpConf = http.baseUrl("http://bap-generiek-fat.web-lsz.ota.duo.nl/bap-referentie-rest/api/")
+  val httpConf = http.baseUrl("localhost")
     .header("Accept", "application/json")
 
   def getAlleGemeenten() = {
